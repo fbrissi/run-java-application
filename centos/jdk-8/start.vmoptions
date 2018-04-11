@@ -6,5 +6,3 @@
 -XX:+CMSConcurrentMTEnabled
 -XX:CMSMaxAbortablePrecleanTime=10000
 -XX:-UseAdaptiveSizePolicy
--Dfile.encoding=utf-8
--Dspring.profiles.active=prod
