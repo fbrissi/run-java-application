@@ -1,0 +1,8 @@
+-server
+-XX:+CMSParallelRemarkEnabled
+-XX:+UseParNewGC
+-XX:-OmitStackTraceInFastThrow
+-XX:SurvivorRatio=2
+-XX:+CMSConcurrentMTEnabled
+-XX:CMSMaxAbortablePrecleanTime=10000
+-XX:-UseAdaptiveSizePolicy
