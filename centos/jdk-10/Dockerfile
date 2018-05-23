@@ -1,14 +1,14 @@
-FROM ppc64le/centos:latest
+FROM centos:latest
 
 MAINTAINER Filipe Bojikian Rissi <filiperissi@finchsolucoes.com.br>
 
 ARG gp=8080
 
-ENV JAVA_VERSION_MAJOR=9 \
-    JAVA_VERSION_MINOR=0.4 \
-    JAVA_VERSION_BUILD=11 \
+ENV JAVA_VERSION_MAJOR=10 \
+    JAVA_VERSION_MINOR=0.1 \
+    JAVA_VERSION_BUILD=10 \
     JAVA_PACKAGE=jdk \
-    JAVA_HASH=c2514751926b4512b076cc82f959763f \
+    JAVA_HASH=fb4372174a714e6b8c52526dc134031e \
     JAVA_HOME=/opt/java \
     PATH=${PATH}:/opt/java/bin \
     JAVA_OPTS="" \

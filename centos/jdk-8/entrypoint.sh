@@ -25,7 +25,7 @@ for opt in ${@}; do
   esac
 done
 
-if [ ! -r ${JAR_FILE} ]; then
+if [ ! -r ${JAR_FILE} && -f ${JAR_URL} ]; then
   curl -o ${JAR_FILE} ${JAR_URL}
 fi
 
@@ -35,4 +35,10 @@ else
   message "Cannot find VM options file"
 fi
 
-java ${JAVA_OPTS} ${VM_OPTIONS} -jar ${JAR_FILE} ${@}
+while ! [ -f ${JAR_FILE} ];
+do
+    echo "Waiting file ${JAR_FILE}"
+    sleep 10
+done
+
+exec java ${JAVA_OPTS} ${VM_OPTIONS} -jar ${JAR_FILE} ${@}

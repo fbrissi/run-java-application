@@ -1,6 +1,5 @@
 -server
 -XX:+CMSParallelRemarkEnabled
--XX:+UseParNewGC
 -XX:-OmitStackTraceInFastThrow
 -XX:SurvivorRatio=2
 -XX:+CMSConcurrentMTEnabled

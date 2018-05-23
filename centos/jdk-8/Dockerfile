@@ -5,10 +5,10 @@ MAINTAINER Filipe Bojikian Rissi <filiperissi@finchsolucoes.com.br>
 ARG gp=8080
 
 ENV JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=161 \
-    JAVA_VERSION_BUILD=12 \
+    JAVA_VERSION_MINOR=171 \
+    JAVA_VERSION_BUILD=11 \
     JAVA_PACKAGE=jdk \
-    JAVA_HASH=2f38c3b165be4555a1fa6e98c45e0808 \
+    JAVA_HASH=512cd62ec5174c3487ac17c61aaa89e8 \
     JAVA_HOME=/opt/java \
     PATH=${PATH}:/opt/java/bin \
     JAVA_OPTS="" \
